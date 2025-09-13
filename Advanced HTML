@@ -1,25 +1,23 @@
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Public Eye Movie Exhibit</title>
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body class="bg-gray-900 text-gray-100 font-sans relative overflow-hidden">
 
-  <!-- Button to start music -->
+  <!-- Toggle Play/Stop Button -->
   <div class="absolute top-4 right-4 z-50">
-    <button id="start-music" class="bg-gray-800 bg-opacity-75 px-4 py-2 rounded-full hover:bg-opacity-100 text-sm">Play Music</button>
+    <button id="toggle-music" class="bg-gray-800 bg-opacity-75 px-4 py-2 rounded-full hover:bg-opacity-100 text-sm">Play Music</button>
   </div>
 
   <!-- Background music (initially not playing) -->
   <audio id="bg-music" src="https://jetta.vgmsite.com/soundtracks/super-mario-world-2-yoshi-s-island-super-nintendo-gamerip/ktgmcihq/13%20Underground.mp3" loop></audio>
 
-  <!-- Main container with a cinematic theme -->
+  <!-- Main content -->
   <div class="main-container grid grid-cols-3 gap-6 p-8 max-w-6xl mx-auto mt-12">
 
     <!-- Card 1 -->
@@ -45,12 +43,11 @@
 
   </div>
 
-  <!-- Optional footer -->
+  <!-- Footer -->
   <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center text-sm text-gray-400">
     &copy; 2024 Public Eye Exhibit. All Rights Reserved.
   </div>
 
   <script src="script.js"></script>
 </body>
-
 </html>
