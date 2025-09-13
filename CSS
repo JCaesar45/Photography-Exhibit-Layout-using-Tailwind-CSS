@@ -1,13 +1,13 @@
-/* Neon color palette and effects */
+/* Neon border and text styles for a cinematic feel */
 .border-neon-purple {
-  border-color: #8a2be2; /* purple */
+  border-color: #8a2be2;
   box-shadow: 0 0 10px #8a2be2, 0 0 20px #8a2be2;
 }
 .border-neon-pink {
-  border-color: #ff69b4; /* pink */
+  border-color: #ff69b4;
   box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
 }
 .text-neon-green {
-  color: #39ff14; /* neon green */
+  color: #39ff14;
   text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
 }
