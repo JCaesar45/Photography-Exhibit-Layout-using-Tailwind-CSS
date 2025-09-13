@@ -1,0 +1,17 @@
+const music = document.getElementById("bg-music");
+const startBtn = document.getElementById("start-music");
+
+startBtn.addEventListener("click", () => {
+  // Play the music
+  music
+    .play()
+    .then(() => {
+      // Optional: change button text
+      startBtn.textContent = "Music Playing";
+      // Disable the button after starting
+      startBtn.disabled = true;
+    })
+    .catch((error) => {
+      console.error("Error trying to play music:", error);
+    });
+});
