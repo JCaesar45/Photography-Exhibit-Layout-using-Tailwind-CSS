@@ -1,17 +1,18 @@
-const music = document.getElementById("bg-music");
-const startBtn = document.getElementById("start-music");
+const music = document.getElementById('bg-music');
+const toggleBtn = document.getElementById('toggle-music');
 
-startBtn.addEventListener("click", () => {
-  // Play the music
-  music
-    .play()
-    .then(() => {
-      // Optional: change button text
-      startBtn.textContent = "Music Playing";
-      // Disable the button after starting
-      startBtn.disabled = true;
-    })
-    .catch((error) => {
-      console.error("Error trying to play music:", error);
+toggleBtn.addEventListener('click', () => {
+  if (music.paused) {
+    // Play the music
+    music.play().then(() => {
+      toggleBtn.textContent = 'Stop Music';
+    }).catch((error) => {
+      console.error('Error trying to play music:', error);
     });
+  } else {
+    // Stop the music
+    music.pause();
+    music.currentTime = 0;
+    toggleBtn.textContent = 'Play Music';
+  }
 });
