@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Public Eye Movie Exhibit</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-sans relative overflow-hidden">
+
+  <!-- Button to start music -->
+  <div class="absolute top-4 right-4 z-50">
+    <button id="start-music" class="bg-gray-800 bg-opacity-75 px-4 py-2 rounded-full hover:bg-opacity-100 text-sm">Play Music</button>
+  </div>
+
+  <!-- Background music (initially not playing) -->
+  <audio id="bg-music" src="https://jetta.vgmsite.com/soundtracks/super-mario-world-2-yoshi-s-island-super-nintendo-gamerip/ktgmcihq/13%20Underground.mp3" loop></audio>
+
+  <!-- Main container with a cinematic theme -->
+  <div class="main-container grid grid-cols-3 gap-6 p-8 max-w-6xl mx-auto mt-12">
+
+    <!-- Card 1 -->
+    <div class="card border-4 border-neon-purple rounded-2xl p-4 shadow-lg transform hover:scale-105 transition-transform duration-300 bg-gray-800 bg-opacity-70 backdrop-blur-md">
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="Ancient Colosseum" class="rounded-lg mb-4 border-4 border-neon-pink object-cover w-full h-64" />
+      <h2 class="subheading font-bold text-2xl mb-2 text-neon-green">Ancient Colosseum</h2>
+      <p class="description text-sm">A stunning view of the historic Roman amphitheater, capturing its majestic architecture with a cinematic glow.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card border-4 border-neon-purple rounded-2xl p-4 shadow-lg transform hover:scale-105 transition-transform duration-300 bg-gray-800 bg-opacity-70 backdrop-blur-md">
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="Snowy Alps" class="rounded-lg mb-4 border-4 border-neon-pink object-cover w-full h-64" />
+      <h2 class="subheading font-bold text-2xl mb-2 text-neon-green">Snowy Alps</h2>
+      <p class="description text-sm">Majestic mountains covered in snow, with a mysterious glow fitting for a spy thriller.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card border-4 border-neon-purple rounded-2xl p-4 shadow-lg transform hover:scale-105 transition-transform duration-300 bg-gray-800 bg-opacity-70 backdrop-blur-md">
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="Serene Sea" class="rounded-lg mb-4 border-4 border-neon-pink object-cover w-full h-64" />
+      <h2 class="subheading font-bold text-2xl mb-2 text-neon-green">Serene Sea</h2>
+      <p class="description text-sm">A tranquil sea scene with an undercurrent of mystery, perfect for a covert operation setting.</p>
+    </div>
+
+  </div>
+
+  <!-- Optional footer -->
+  <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center text-sm text-gray-400">
+    &copy; 2024 Public Eye Exhibit. All Rights Reserved.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
